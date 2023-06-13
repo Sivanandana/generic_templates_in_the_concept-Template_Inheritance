@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>this is parent file</title>
+        {% endblock %}
+</head>
+<body>
+    <center>
+   
+    <h2>this is templates inheritance</h2>
+
+    {% block body %}
+    <h1>you can take two or more html files</h1>
+    {% endblock %}
+     {% block body %}
+    <h3>it is only templates exchang concept</h3>
+     {% endblock %}
+     </center>
+</body>
+</html>
